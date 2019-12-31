@@ -1,0 +1,14 @@
+C:\Users\srahul\source\repos\api-leaderboard-service\bin\Debug\netcoreapp2.2\api-leaderboard-service.deps.json
+C:\Users\srahul\source\repos\api-leaderboard-service\bin\Debug\netcoreapp2.2\api-leaderboard-service.runtimeconfig.json
+C:\Users\srahul\source\repos\api-leaderboard-service\bin\Debug\netcoreapp2.2\api-leaderboard-service.runtimeconfig.dev.json
+C:\Users\srahul\source\repos\api-leaderboard-service\bin\Debug\netcoreapp2.2\api-leaderboard-service.dll
+C:\Users\srahul\source\repos\api-leaderboard-service\bin\Debug\netcoreapp2.2\api-leaderboard-service.pdb
+C:\Users\srahul\source\repos\api-leaderboard-service\obj\Debug\netcoreapp2.2\api-leaderboard-service.csproj.CoreCompileInputs.cache
+C:\Users\srahul\source\repos\api-leaderboard-service\obj\Debug\netcoreapp2.2\api-leaderboard-service.RazorAssemblyInfo.cache
+C:\Users\srahul\source\repos\api-leaderboard-service\obj\Debug\netcoreapp2.2\api-leaderboard-service.RazorAssemblyInfo.cs
+C:\Users\srahul\source\repos\api-leaderboard-service\obj\Debug\netcoreapp2.2\api-leaderboard-service.AssemblyInfoInputs.cache
+C:\Users\srahul\source\repos\api-leaderboard-service\obj\Debug\netcoreapp2.2\api-leaderboard-service.AssemblyInfo.cs
+C:\Users\srahul\source\repos\api-leaderboard-service\obj\Debug\netcoreapp2.2\api-leaderboard-service.RazorTargetAssemblyInfo.cache
+C:\Users\srahul\source\repos\api-leaderboard-service\obj\Debug\netcoreapp2.2\api-leaderboard-service.dll
+C:\Users\srahul\source\repos\api-leaderboard-service\obj\Debug\netcoreapp2.2\api-leaderboard-service.pdb
+C:\Users\srahul\source\repos\api-leaderboard-service\bin\Debug\netcoreapp2.2\api-leaderboard-service.xml
