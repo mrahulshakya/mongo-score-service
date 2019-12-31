@@ -14,9 +14,12 @@ namespace api_leaderboard_service
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         #region snippet_ConfigureServices
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
+
             //services.AddDbContext<TodoContext>(opt =>
             //    opt.UseInMemoryDatabase("TodoList"));
             var mappingConfig = new MapperConfiguration(mc =>
@@ -78,7 +81,8 @@ namespace api_leaderboard_service
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API");
                 c.RoutePrefix = "swagger/ui";
             });
-
+            app.UseCors(
+        options => options.WithOrigins("*").AllowAnyMethod().AllowAnyHeader());
             app.UseMvc();
         }
         #endregion

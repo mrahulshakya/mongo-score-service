@@ -11,7 +11,7 @@ namespace Api.LeaderBoard.Service.Models
         public string UserName { get; set; }
 
         [Required]
-        [Range(1, int.MaxValue)]
+        [Range(0, int.MaxValue)]
         public int Score { get; set; }
     }
 }

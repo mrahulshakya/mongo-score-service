@@ -68,29 +68,29 @@ namespace Api.LeaderBoard.Service.Controllers
         }
 
         // POST api/values
-        [HttpPut]
-        [Route("/scores/{userId}")]
+        [HttpPost]
+        [Route("/scores/")]
         //[ProducesResponseType((int)HttpStatusCode.Created, Type = typeof(CreatedAtActionResult))]
         //[SwaggerOperation("Post")]
-        public async Task<IActionResult> UpdateScore([FromRoute] string userId,[FromBody] UpdateScoreRequest request)
+        public async Task<IActionResult> UpdateScore([FromBody] UpdateScoreRequest request)
         {
             if (!ModelState.IsValid)
             {
                 return await Task.FromResult(BadRequest(ModelState));
             }
 
-            var score = await this.ScoreDbRepository.GetScore(userId).ConfigureAwait(false);
+            var score = await this.ScoreDbRepository.GetScore(request.Score.UserId).ConfigureAwait(false);
             var scoreDto = this.Mapper.Map<ScoreDto>(score);
-            if (scoreDto != null && scoreDto.Score > request.Score)
+            if (scoreDto != null && scoreDto.Score > request.Score.Score)
             {
                 return await Task.FromResult(BadRequest(new { Error = "Higher score already  exists!" }));
             }
 
             var scoreModel = new ScoreMongoModel
             {
-                Id = userId,
-                Score = request.Score,
-                UserName = request.UserName
+                Id = request.Score.UserId,
+                Score = request.Score.Score,
+                UserName = request.Score.UserName
             };
 
             if (score == null)
